@@ -3,6 +3,10 @@
 Kaynak: 05 ÖTR Yol Haritası v2, Semrük Proje Planı v3, 2026 ÖTR Şablonu (geçen yılın, referans).
 2027 şablonu yaklaşık Mart başında gelecek; gelince bu dosya güncellenir. Plan ile çelişirse **Plan geçerlidir**.
 
+**Kapsam kuralı (kaptan kararı, 21.11.2026):** ÖTR dönemine yalnızca ÖTR şablonuna veya şartname kurallarına bağlanan işler
+girer; parça alımı, üretim, maket, test ve ölçüm, kod geliştirme, KTR ve video hazırlığı, test parkuru ve simülatör yoktur.
+ÖTR §5'teki üretim ve test takvimi yalnızca rapor metnidir. Plan ÖTR resmî son tarihinde kapanır.
+
 ÖTR 100 puan ve en fazla 10 sayfadır; kapak ve içindekiler 2 sayfa aldığı için içerik **8 sayfaya** sığmalıdır.
 Puanın **45'i Kodi'de** (yazılım + yöntem), **25'i Avi'de** (blok şema + donanım).
 

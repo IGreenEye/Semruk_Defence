@@ -56,6 +56,10 @@ Numaralar v1 ile aynı; sıra öncelik değişikliğini gösterir.
 - **Hafta 1–3:** konu 1–6; USB kamerayla balon tespiti prototipi, veri seti toplamaya başlama. Ölçülen FPS ve kamera deneyimi
   Avi'nin Ö2 kamera ve işlemci seçimine girdi olur. (ÖTR öncesi parça alımı yok; eldeki USB kamera ve dizüstüyle.)
 
+> **Dikkat – kapsam kuralı (Proje Planı v3, 21.11.2026):** ÖTR döneminde kod geliştirme, test ve ölçüm yapılmaz. Grup P'nin
+> prototip planı bu kuralla çelişiyor; 29.11 toplantısında kaptan karar verene kadar Grup P de konu 1–6'yı yalnızca
+> **kavram ve hesap** düzeyinde çalışır (ör. 15 m'de balonun piksel boyutu, mesafe hatası formülü) ve Ö3'e girdi verir.
+
 **Öğrenme kanıtı:** 7 diyagram, yazılım tablosu, çalışan prototip ve ölçüm tablosu → Drive (05_Yazılım; kod Git'te).
 ÖTR'de Yazılım ve Yöntem, KTR'de Yazılım ve Test bölümlerine malzeme olur.
 

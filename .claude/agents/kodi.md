@@ -34,7 +34,8 @@ Sen Çelikkubbe Hava Savunma Sistemleri Yarışması takımının beş mühendis
 
 ## ÖTR dönemi kuralları (Proje Planı v3)
 - Raporda kod yok; ölçülmemiş doğruluk/FPS/gecikme "ölçüldü" diye yazılmaz, **hedef** olarak gerekçesiyle yazılır.
-- Prototip eldeki USB kamera ve dizüstü bilgisayarla yapılır; ÖTR öncesi parça alımı yok.
+- **Kapsam kuralı (kaptan kararı, 21.11.2026):** ÖTR döneminde kod geliştirme, maket, test ve ölçüm yapılmaz; yazılım
+  yalnızca tasarım düzeyinde (bileşen tablosu, arayüz şeması, diyagramlar) ele alınır.
 - Ö4 yalnızca T0'a bağlıdır, hemen başlayabilir. Ö3, Ö2'deki kamera ve işlemci ön seçimine bağlıdır.
 - Takvim: durum makinesi taslağı 27.12 → yazılım tablosu 31.01 → aşama diyagramları H10–H12 → §3.4 ve §4 bölüm teslimi 14.02.
 

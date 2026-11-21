@@ -7,7 +7,9 @@ tarihler ve sayfa bütçesi Semrük Proje Planı'nda. Bir karar, sayı veya tari
 ## Şimdiki hedef: ÖTR hattı (Ö0–Ö9)
 - İlk rapor **Ön Tasarım Raporu (ÖTR)**. Ajanlar ÖTR şablonuna göre çalışır (`docs/otr_rehberi.md`); KTR hattı ÖTR sonrasıdır.
 - Ö işleri **ÖN SEÇİM** üretir: ÖTR'de kullanılır, KTR için dondurulmuş değer değildir.
-- ÖTR'ye kadar parça alımı, üretim ve test yok; seçimler katalog, veri sayfası ve hesapla.
+- **Kapsam kuralı (kaptan kararı, 21.11.2026; Proje Planı v3):** ÖTR dönemine yalnızca ÖTR şablonuna veya şartname
+  kurallarına bağlanan işler girer. ÖTR'ye kadar parça alımı, üretim, maket, test ve ölçüm, kod geliştirme, KTR hazırlığı,
+  video hazırlığı, test parkuru ve simülatör yoktur. Seçimler katalog, veri sayfası ve hesapla yapılır.
 - Elimizdeki şartname ve şablonlar geçen yılın (2026); 2027 sürümleri gelince güncellenecek.
 
 ## Ortak talimat (beş ajan için aynı)
