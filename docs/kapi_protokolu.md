@@ -1,9 +1,9 @@
 # Kapı Protokolü (beş ajan için aynı)
 
-Kaynak: 01 Kurulum Paketi v2, §4.2 ve §5. v1 Drive'da Arşiv (v1 – 15.11.2026) klasöründedir.
+Kaynak: 01 Kurulum Paketi v2.1. Kapsam: yalnızca ÖTR dönemi.
 
-1. **Durumlar:** AÇIK → ÇALIŞMADA → İNCELEMEDE → ONAYLI | ASKIDA. Yalnız Ö işlerinde ONAYLI yerine **ÖN SEÇİM**.
-2. **Başlama kuralı:** KTR hattında girdi İP'si ONAYLI değilse iş başlamaz. ÖTR hattında girdi ÖN SEÇİM ya da ONAYLI olmalıdır.
+1. **Durumlar:** AÇIK → ÇALIŞMADA → İNCELEMEDE → ÖN SEÇİM (Ö işleri) veya ONAYLI (T0, M1) | ASKIDA.
+2. **Başlama kuralı:** Girdi İP'si ÖN SEÇİM ya da ONAYLI değilse iş başlamaz.
 3. **Onay:** Sahip ajan Teslim Notu yazar → Sis notu toplar, tabloya işler ve diğer departmanlarla çelişki var mı bakar →
    Konti bağımsız doğrular → kaptan onaylar.
 4. **Değişiklik Talebi (DT):** ONAYLI çıktıyı değiştirmek için DT açılır; Sis etkilenen İP'leri listeler, Konti etki
@@ -15,13 +15,12 @@ Kaynak: 01 Kurulum Paketi v2, §4.2 ve §5. v1 Drive'da Arşiv (v1 – 15.11.202
 8. **Rol sınırı:** Sis tasarım kararı vermez; çelişkiyi bulur ve sahibine geri gönderir. Konti tasarım yapmaz ve rapor bölümü yazmaz.
 
 ## ÖN SEÇİM nedir
-- ÖTR şablonu, motor ve kamera gibi parçaların model ve fiyatını ister. KTR hattında bu seçimler ancak M2 ve A1
-  onaylanınca yapılır; ÖTR tarihine yetişmez.
-- Bu yüzden Ö işleri **marjlı tahmin** ve **ön seçim** üretir. Konti'nin hızlı kontrolünden geçince durumu **ÖN SEÇİM** olur.
+- ÖTR şablonu, motor ve kamera gibi parçaların model ve fiyatını ister. Bu seçimler ÖTR'de test ve ölçüm olmadan, katalog,
+  veri sayfası ve hesapla yapılır.
+- Bu yüzden Ö işleri **marjlı tahmin** ve **ön seçim** üretir. Konti'nin kontrolünden geçince durumu **ÖN SEÇİM** olur.
   Konti ön hesapları (kütle v0, tork, güç, piksel/menzil) kendi yöntemiyle tekrarlar; fark %10'u aşarsa sahibine geri gönderir.
-- ÖN SEÇİM ÖTR'de kullanılabilir, ama KTR iş paketleri için **dondurulmuş değer değildir**. M1, M2, A1, A2 bu değerleri
-  başlangıç tahmini olarak alır ve kapıdan geçirerek ONAYLI yapar.
-- ÖTR'den KTR'ye değişen her seçim KTR'de "değişiklik ve gerekçe" olarak yazılır. Değişiklik hata değildir.
+- ÖN SEÇİM ÖTR'de kullanılır, ama **dondurulmuş değer değildir**. ÖTR'den sonra ayrı plan kapsamında yeniden ele alınır;
+  değişiklik hata sayılmaz.
 
 ## Bağımsızlık: bu takımdaki atama
 | Ajan | Kullanan / nerede | Çıktılarını Konti olarak kim doğrular |
@@ -44,14 +43,15 @@ Kaynak: 01 Kurulum Paketi v2, §4.2 ve §5. v1 Drive'da Arşiv (v1 – 15.11.202
   bağlayıcısıyla Teslim Notlarını okur. Bulgularını önce sohbette Yusuf'a sunar; Drive'daki bir dosyaya yalnızca Yusuf
   onaylarsa ve yalnızca kendi kutusuna ("Sis kontrolü", "Konti doğrulaması") yazar.
 - **Avi, Kodi:** ekiplerin kendi bilgisayarlarında, kendi Claude hesaplarında bir Claude Projesi olarak. Talimat metni Drive'daki
-  "Ajan Talimatları (v2)" belgelerinden kopyalanır. Çıktılar Drive'a Teslim Notu olarak yüklenir.
+  "Ajan Talimatları" belgelerinden kopyalanır. Çıktılar Drive'a Teslim Notu olarak yüklenir.
 
 ## Serbest hazırlık hattı
 Bilgi toplama, öğrenme, veri seti, alternatif araştırma her zaman serbesttir; karar ya da donmuş değer üretmez.
 
-## ÖTR dönemi kuralları (Proje Planı v3)
-ÖTR'ye kadar parça alınmaz, üretilmez, test edilmez. Seçimler katalog, veri sayfası ve hesapla yapılır. Fiyatlar kaynağı ve
-tarihiyle yazılır. Balon çapı hesaplarda 20 cm (kötü durum VARSAYIM).
+## Kapsam kuralı (kaptan kararı, 21.11.2026; Proje Planı v4)
+ÖTR dönemine yalnızca ÖTR şablonuna veya şartname kurallarına bağlanan işler girer. ÖTR'ye kadar parça alımı, üretim, maket,
+test ve ölçüm, kod geliştirme, KTR ve video hazırlığı, test parkuru ve simülatör yoktur. Seçimler katalog, veri sayfası ve
+hesapla yapılır; fiyatlar kaynağı ve tarihiyle yazılır. Balon çapı hesaplarda 20 cm (kötü durum VARSAYIM).
 
 ## Nerede tutulur (Drive)
 | Ne | Drive | Dosya adı |

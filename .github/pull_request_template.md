@@ -14,4 +14,4 @@
 - [ ] Semrük Ana Dosya ve Kurulum Paketi'nin güncel sürümüyle çelişmiyor
 - [ ] Beş ajanda ortak olan bir kural (ortak talimat, kapı protokolü özeti) değiştiyse beş dosya da güncellendi
 - [ ] ÖTR dönemi kurallarıyla uyumlu (alım/üretim/test yok, ÖN SEÇİM dondurulmuş değer değil)
-- [ ] Birleşince Drive'daki Ajan Talimatları (v2) ve ilgili Claude Projesi güncellenecek (sorumlu: )
+- [ ] Birleşince Drive'daki Ajan Talimatları ve ilgili Claude Projesi güncellenecek (sorumlu: )

@@ -1,19 +1,18 @@
 # Teslim Raporu Rehberi
 
 Kaynak: 03_Teslim_Raporu_Rehberi. Örneklerdeki değerler **ÖRNEK DEĞERDİR**, tasarım kararı ya da tavsiye değildir.
-Örnekler v1 dönemindendir (M1, A1, Y1). Kurulum Paketi v2'de ÖTR işleri Ö hattında yürür: Örnek A'nın ÖTR karşılığı Ö1,
-Örnek B'ninki Ö2, Örnek C'ninki Ö3'tür ve hedef durum ONAYLI değil **ÖN SEÇİM**'dir. "Rapor bölümüne katkı" satırları
-ÖTR bölümlerine çevrildi (`docs/otr_rehberi.md`). Örnek A'nın sorumlusu artık Sezen'dir.
+Örnekler Ö hattına uyarlanmıştır: Örnek A = Ö1 (M1 v1 + M2 v0), Örnek B = Ö2 (A1 v0), Örnek C = Ö3 (yazılım ön tasarımı).
+Ö işlerinde hedef durum **ÖN SEÇİM**'dir. Örnek A'nın sorumlusu Sezen'dir.
 
 ## Beş temel kural
 - Her sayının birimi ve kaynağı yazılır. "Yeterli tork" değil, "3,5 N·m (hesap: m·g·r·2)".
 - Hesap görünür olmalı; Konti bağımsız tekrarlayacak.
 - Bilinmeyen değer uydurulmaz: `VARSAYIM` yaz, ne zaman netleşeceğini söyle.
-- Her karar bir gereksinime (R01–R15) bağlanır.
+- Her karar bir gereksinime (R01–R18) bağlanır.
 - "Bağımlı İP'lere etkisi" boş bırakılmaz.
 
-## ÖRNEK A – Meka · M1 Konsept Notu
-**Girdiler:** T0 v1 (REQ, ≤60 cm kararı), Parkur Çizimi PLG26-A-001-002-00
+## ÖRNEK A – Meka · Ö1 (M1 v1) Konsept Notu
+**Girdiler:** T0 v1 (REQ, ≤60 cm kararı), Parkur Çizimi PLG26-A-001-002-01
 
 | Büyüklük | Değer | Birim | Kaynak | Güven |
 |---|---|---|---|---|
@@ -26,10 +25,10 @@ Kaynak: 03_Teslim_Raporu_Rehberi. Örneklerdeki değerler **ÖRNEK DEĞERDİR**,
 - Karar: 2 eksenli (yaw+pitch) platform (Şart. 5.1, R01). Yaw'da ±60° mekanik durdurucu (R03). Patlatma modülü: [seçilen aile] (R06).
 - VARSAYIM: gövde yüksekliği 0,5 m, hedef yüksekliği 0,3–2,0 m. VARSAYIM: balon çapı şartnamede yok (S&C).
 - Risk: hedef yüksekliği farklıysa pitch yetmeyebilir → çizim doğrulaması + ±5° yedek.
-- Bağımlı İP: M2 (açı, zarf, atalet), A1/A2 (dönme aralığı, enkoder), Y2 (yasak alan sınırları). ÖTR: §3.2 Mekanik Tasarım (bileşen tablosu, 3B model görseli).
+- Bağımlı İP: Ö1 M2 v0 (açı, zarf, atalet), Ö2 (dönme aralığı, enkoder, tork ön hesabı), Ö3/Ö4 (yasak alan sınırları). ÖTR: §3.2 Mekanik Tasarım (bileşen tablosu, 3B model görseli).
 
-## ÖRNEK B – Avi · A1 Motor ve Güç Notu
-**Girdiler:** M2 v1, T0 v1
+## ÖRNEK B – Avi · Ö2 (A1 v0) Motor ve Güç Notu
+**Girdiler:** Ö1 (kütle v0, ÖN SEÇİM), T0 v1
 
 | Büyüklük | Değer | Birim | Kaynak | Güven |
 |---|---|---|---|---|
@@ -43,10 +42,10 @@ Kaynak: 03_Teslim_Raporu_Rehberi. Örneklerdeki değerler **ÖRNEK DEĞERDİR**,
 - Karar: 220 VAC → 24 VDC (R11). Enkoder + limit anahtarı (R03).
 - VARSAYIM: redüktör verimi %85. VARSAYIM: atalet torku statik torkun altında.
 - Risk: tedarik gecikmesi → iki alternatif üretici.
-- Bağımlı İP: A2 (sürücü arayüzü), M3 (montaj, kutu hacmi), Y2 (PWM/seri arayüz). ÖTR: §3.3 Donanım Tasarımı (üretici, model, fiyat tablosu), §3.5 Malzeme Listesi.
+- Bağımlı İP: Ö2 blok şema (sürücü arayüzü), Ö1 (montaj hacmi), Ö3 (motor kontrol arayüzü), Ö5 (malzeme listesi). ÖTR: §3.3 Donanım Tasarımı (üretici, model, fiyat tablosu), §3.5 Malzeme Listesi.
 
-## ÖRNEK C – Kodi · Y1 Algılama Notu
-**Girdiler:** A2 v1 (kamera spec, ICD), T0 v1
+## ÖRNEK C – Kodi · Ö3 Yazılım Ön Tasarımı (algılama) Notu
+**Girdiler:** Ö2 (kamera ve işlemci ÖN SEÇİM), T0 v1
 
 | Büyüklük | Değer | Birim | Kaynak | Güven |
 |---|---|---|---|---|
@@ -60,10 +59,10 @@ Kaynak: 03_Teslim_Raporu_Rehberi. Örneklerdeki değerler **ÖRNEK DEĞERDİR**,
 (f = 1000 px, D = 0,20 m VARSAYIM)
 - Karar: iki aşamalı algoritma (renk → maket sınıflandırma) (R09, R10). Tek kamera + bilinen boyuttan mesafe.
 - Risk: F16 10 m sınırında mesafe hatası puan kaybı → ikinci yöntem veya güvenlik payı.
-- Bağımlı İP: Y2, Y4, T1. ÖTR: §3.4 Yazılım Tasarımı (bileşen tablosu, arayüz şeması).
+- Bağımlı İP: Ö4 (Yöntem diyagramları), Ö5 (malzeme listesi), Ö7 (derleme). ÖTR: §3.4 Yazılım Tasarımı (bileşen tablosu, arayüz şeması).
 
 > **ÖTR dönemi notu:** Bu örnekteki doğruluk ve gecikme değerleri ÖTR'de "ölçüm" değil **hedef** olarak yazılır;
-> ölçüm KTR döneminde yapılır. ÖTR'de kod paylaşılmaz.
+> ÖTR döneminde ölçüm ve kod geliştirme yapılmaz (kapsam kuralı). ÖTR'de kod paylaşılmaz.
 
 ## Sık yapılan hatalar
 Birim/kaynak eksik · varsayımı kesin gibi yazmak · REQ bağlantısı yok · "Bağımlı İP" boş ·

@@ -1,6 +1,6 @@
 # ÖTR Rehberi
 
-Kaynak: 05 ÖTR Yol Haritası v2, Semrük Proje Planı v3, 2026 ÖTR Şablonu (geçen yılın, referans).
+Kaynak: 05 ÖTR Yol Haritası v2, Semrük Proje Planı v4, 2026 ÖTR Şablonu (geçen yılın, referans).
 2027 şablonu yaklaşık Mart başında gelecek; gelince bu dosya güncellenir. Plan ile çelişirse **Plan geçerlidir**.
 
 **Kapsam kuralı (kaptan kararı, 21.11.2026):** ÖTR dönemine yalnızca ÖTR şablonuna veya şartname kurallarına bağlanan işler
@@ -57,7 +57,7 @@ sekans yan yana). Yer yetmezse durum makinesi küçültülür; aşama diyagramla
       Basılı → Soyadı, Adın baş harfi., (Basım tarihi) Başlık, (varsa) dergi adı, sayısı, sayfa numarası
 - [ ] Şablondaki başlık numaraları ve sırası korunmuş; "Rapor taslakları ile ilgili not" sayfası rapora eklenmemiş
 
-## 4. Geri sayım (Plan v3; 2027 takvimi geçen yılla aynı VARSAYIMI)
+## 4. Geri sayım (Plan v4; 2027 takvimi geçen yılla aynı VARSAYIMI)
 | İP | Ne | Tarih | Kim |
 |---|---|---|---|
 | Ö0 | ÖTR iskeleti ve sayfa bütçesi; takım şeması | 06.12 (iskelet), 13.12 (takım şeması) | Sis |
