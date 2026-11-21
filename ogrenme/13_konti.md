@@ -1,56 +1,65 @@
-# Öğrenme Rehberi – Konti (Doğrulama, Analiz ve Geliştirme)
+# Öğrenme Rehberi – Konti (Bağımsız Doğrulama) · v2
 
-Sorumlu: **Yusuf Köse (kaptan)** ve **Sıla Doğan**
+Kullanan: **Yusuf Köse** · Kaynak: Drive "13 Öğrenme Rehberi – Konti (v2, daraltıldı)"
 
-**Amaç:** Konti rolünü üstlenen kişinin sistemi bağımsız doğrulama, gereksinim yönetimi, test, risk ve KTR derlemesi
-konularında yönetebilmesi. Konti diğer üç departmanın işini yapmaz; kapıda "doğru mu?" sorusunu cevaplar.
+**v2'de ne değişti:** Konti'nin görevi daraldı. Gereksinim yazımı, yaşam döngüsü, ICD, proje yönetimi, puan stratejisi,
+operasyon planı ve rapor yazımı **Sis**'e geçti (`ogrenme/14_sis.md`). ÖTR için hakem incelemesi, biçim ve diyagram denetimi
+eklendi. Liste 17 konudan 13'e indi.
+
+**Amaç:** Başkasının ürettiği işi **bağımsız olarak doğrulayabilmek**. Konti tasarım yapmaz, rapor bölümü yazmaz, plan yapmaz;
+kapıda **"doğru mu, kanıtı ne?"** sorusunu cevaplar.
+
+**Bağımsızlık kuralı:** Konti'yi kullanan kişi kendi departmanının işini doğrulamaz. Bu takımda Konti'yi Yusuf kullanır; Yusuf
+Sis'i de kullandığı için **Sis'in çıktıları Sezen veya Eren yanındayken ve onların onayıyla** doğrulanır (`docs/kapi_protokolu.md`).
+Kaptan son onayı verir.
+
+## 0. ÖTR'de senden istenen (Ö8)
+Konti ÖTR'de hiçbir bölümü yazmaz; Sis'in derlediği taslağı hakem gözüyle inceler (H14, 22–28.02).
+- **Puan tahmini:** her bölüm şablondaki puanıyla (Özet 5, Blok şema 5, Mekanik 10, Donanım 20, Yazılım 20, Malzeme listesi 5, Yöntem 25, Zaman-bütçe 5, Rapor düzeni 5).
+- **Düzeltme listesi:** en çok puan kazandıracak ilk 3 düzeltme önce.
+- **Hesap tekrarı:** kütle v0, tork, güç, piksel/menzil; %10'dan büyük farkı sahibine geri gönder.
+- **Kontrol listesi:** R16 (biçim), R17 (kişisel veri), R18 (içerik zorunlulukları) madde madde.
+- **Alıntı ve benzerlik:** geçmiş raporlardan alınan her cümle şablon formatıyla gösterilmiş mi; aynı/çok benzer metin riski var mı.
 
 ## 1. Öğrenme listesi
-Öncelik: **A** = T0/M1 aşamasında · **B** = ilk kapılardan önce · **C** = test ve rapor aşamasında
+Öncelik: **Ö** = Ö8'den önce · **A** = ilk KTR kapılarından (M2, A2) önce · **B** = test planlarından önce · **C** = test ve entegrasyon
 
-| # | Konu | Öncelik | Neden (iş) | Yapabildiğini nasıl anlarsın | ✓ |
+| # | Konu | Öncelik | Neden | Yapabildiğini nasıl anlarsın | ✓ |
 |---|---|---|---|---|---|
-| 1 | Gereksinim mühendisliği: ölçülebilir/test edilebilir gereksinim, izlenebilirlik matrisi | A | T0: R01–R15 | Bir gereksinimi test edilebilir hâle getirir, İP ve teste bağlarsın | [ ] |
-| 2 | Sistem mühendisliği yaşam döngüsü (V modeli) | A | Bağımlılık haritası ve kapılar | Kapı kriterlerini V modeline eşlersin | [ ] |
-| 3 | Doğrulama yöntemleri: analiz, test, inceleme, gösterim | A | Her kapıda onay kriteri | Her REQ için doğrulama yöntemini seçersin | [ ] |
-| 4 | Arayüz yönetimi: ICD, dondurulmuş zarflar, değişiklik kontrolü | A | M2/A2 sonu, DT | Bir ICD sayfası yazarsın (kim, ne, birim, sürüm) | [ ] |
-| 5 | Bağımsız hesap kontrolü: büyüklük mertebesi, birim analizi, sınır durumu | A | Her kapıda | Meka/Avi'nin tork ve güç hesabını kendi yönteminle tekrarlarsın | [ ] |
-| 6 | FMEA ve hata ağacı (RPN/AP) | B | A2: e-stop, yasak alan | E-stop için FMEA tablosu doldurursun | [ ] |
-| 7 | Güvenlik ve risk değerlendirmesi (hata-güvenli tasarım) | B | KTR §6, Şart. 4.2 | Bir alt sistem için "hata durumunda güvenli" gerekçe yazarsın | [ ] |
-| 8 | Kötü gün senaryoları: kablo kopması, güç kesintisi, yazılım çökmesi, yanlış hedef, ışık | B | KTR §4.4.3, T1/T2 | 10 senaryo listeleyip beklenen davranışı yazarsın | [ ] |
-| 9 | Test tasarımı: plan, kabul kriteri, test seti bağımsızlığı, kayıt | B | T1–T4 | Girdi/adım/beklenen sonuç/geçti-kaldı içeren test planı yazarsın | [ ] |
-| 10 | İstatistik: ortalama, std, güven aralığı, hata matrisi, kesinlik/geri çağırma | B | Y1 doğrulama, isabet | 20 atışın isabet oranını güven aralığıyla yorumlarsın | [ ] |
-| 11 | Entegrasyon stratejisi | C | T1–T2 | Entegrasyon sırasını ve başarısızlık kriterlerini yazarsın | [ ] |
-| 12 | Puan stratejisi ve simülasyon (Şart. 6) | C | T4 | Aşama-1/2/3 beklenen puan tablosu ve riskli karar noktaları çıkarırsın | [ ] |
-| 13 | Operasyon planı: 30 dk hazırlık, 10 dk bakım, kontrol listeleri, roller | C | R13, T4 | Yarış günü zaman çizelgesi ve rol kartları hazırlarsın | [ ] |
-| 14 | Proje yönetimi: WBS, kritik yol, zaman-bütçe-risk matrisi | A | Tüm süreç, KTR | 4 aylık kritik yol ve risk matrisi hazırlarsın | [ ] |
-| 15 | Diyagramlar: SysML/UML (blok, use case, durum, sekans) | C | KTR §4.4 | Sistem blok ve sekans diyagramı çizersin | [ ] |
-| 16 | Teknik rapor yazımı: KTR yapısı, puan kriterleri, kaynakça ve alıntı | A | KTR (50 puan) | Her KTR bölümünün puanını ve hakemin ne arayacağını açıklarsın | [ ] |
-| 17 | Kök neden analizi (5 Neden, balık kılçığı), düzeltici faaliyet | C | T1–T4 | Bir test başarısızlığı için kök neden ve düzeltici faaliyet yazarsın | [ ] |
+| 1 | Doğrulama yöntemleri: analiz, test, inceleme, gösterim | **Ö** | Her kapıda onay kriteri | Her gereksinim için uygun doğrulama yöntemini seçersin | [ ] |
+| 2 | Hakem gibi değerlendirme: ÖTR/KTR puan kriterleri, puan tahmini, düzeltme önceliklendirme | **Ö** | Ö8; KTR incelemesi | Bir bölümü puanlar, puanı en çok artıracak 3 düzeltmeyi gerekçesiyle yazarsın | [ ] |
+| 3 | Bağımsız hesap kontrolü: büyüklük mertebesi, birim analizi, sınır durum, farklı yöntemle tekrar | **Ö** | Ö8: ön hesaplar; her kapı | Meka/Avi'nin tork ve güç hesabını kendi yönteminle tekrarlayıp farkı raporlarsın | [ ] |
+| 4 | Gereksinim doğrulama: test edilebilir mi, tasarım karşılıyor mu (yazmak Sis'te) | **Ö** | REQ listesinin kontrolü | Bir gereksinimin ölçülemeyen yerini bulup Sis'e geri verirsin | [ ] |
+| 5 | Biçim ve uygunluk denetimi: şablon kuralları, kişisel veri, alıntı formatı, benzerlik riski | **Ö** | Ö8: R16–R18 | ÖTR kontrol listesini bir taslak üzerinde eksiksiz işaretlersin | [ ] |
+| 6 | Diyagram okuma ve denetimi: aktivite, sekans, durum makinesi; kural diyagramda var mı | **Ö** | Ö8: Yöntem (25) | Bir aşama diyagramında eksik kural dalını (ceza, menzil, e-stop) bulursun | [ ] |
+| 7 | FMEA ve hata ağacı | A | A2: e-stop ve yasak alan | E-stop için FMEA tablosu doldurursun | [ ] |
+| 8 | Güvenlik ve risk değerlendirmesi (hata-güvenli tasarım) | A | KTR §6, Şart. 4.2 | "Hata durumunda güvenli" gerekçesini sorgularsın | [ ] |
+| 9 | Kötü gün senaryoları: kablo kopması, güç kesintisi, yazılım çökmesi, yanlış hedef, ışık | B | KTR §4.4.3, T1/T2 | 10 senaryo listeleyip beklenen davranışı yazarsın | [ ] |
+| 10 | Test tasarımı: plan, kabul kriteri, test seti bağımsızlığı, tekrarlanabilirlik, kayıt | B | T1–T4 | Girdi/adım/beklenen sonuç/geçti-kaldı içeren test planı yazarsın | [ ] |
+| 11 | İstatistik: ortalama, std, güven aralığı, hata matrisi | B | Y1 doğrulama, isabet | 20 atışın isabet oranını güven aralığıyla yorumlarsın | [ ] |
+| 12 | Entegrasyon testi: arayüz uyumsuzluğu bulma | C | T1–T2 | Entegrasyon sırasını ve başarısızlık kriterlerini yazarsın | [ ] |
+| 13 | Kök neden analizi (5 Neden, balık kılçığı), düzeltici faaliyet | C | T1–T4 | Bir test başarısızlığı için kök neden ve düzeltici faaliyet yazarsın | [ ] |
 
-## 2. 2 haftalık plan (T0 ve M1 ile paralel)
-- **Hafta 1:** konu 1, 2, 3, 14, 16 → REQ listesi sürümü + 4 aylık kritik yol taslağı
-- **Hafta 2:** konu 4, 5, 6, 8 → ICD şablonu + e-stop FMEA taslağı (Avi'den önce hazır olsun)
+## 2. 2 haftalık plan
+- **Hafta 1:** konu 1, 2, 4, 5 → ÖTR hakem kontrol listesi (bölüm, puan, kontrol soruları, R16–R18).
+- **Hafta 2:** konu 3, 6 → ön hesapları tekrarlayan küçük Python betikleri (tork, güç, piksel/menzil); diyagram denetim listesi.
+- Sonra, A2 kapısından önce: konu 7, 8 (e-stop FMEA şablonu hazır olsun).
 
-**Öğrenme kanıtı:** Her konu için 1 sayfa → `ogrenme/kanitlar/konti/` (KTR Zaman-Bütçe-Risk, Test, Güvenlik, Tecrübe).
+**Öğrenme kanıtı:** Kontrol listeleri ve doğrulama betikleri → Drive (00_Yönetim / 07_Test ve Deney). KTR Test ve Güvenlik bölümlerine kanıt.
 
 ## 3. Kaynaklar
-**Kitaplar:** *NASA Systems Engineering Handbook* (NASA/SP-2016-6105, ücretsiz) · *INCOSE SE Handbook* ·
-Blanchard & Fabrycky, *Systems Engineering and Analysis* · Wiegers & Beatty, *Software Requirements* ·
-AIAG & VDA FMEA El Kitabı · Friedenthal, Moore & Steiner, *A Practical Guide to SysML* ·
+**Kitaplar:** *NASA Systems Engineering Handbook* (NASA/SP-2016-6105; doğrulama ve onaylama bölümleri) · AIAG & VDA FMEA El Kitabı ·
 Montgomery & Runger, *Applied Statistics and Probability for Engineers* · 5 Neden / Ishikawa ders notları
 
-**Standartlar:** ISO/IEC/IEEE 29148 · ISO/IEC/IEEE 15288 · IEC 60812 · ISO 12100, ISO 13850, ISO 13849-1
+**Standartlar:** IEC 60812 · ISO 12100, ISO 13850, ISO 13849-1
 
-**Ders:** MIT OCW, edX/Coursera (Systems Engineering, Project Management, Statistics) · NASA ve INCOSE materyalleri ·
-yayımlanmış ÖTR/KTR örnekleri (format için)
+**Yarışma (birincil):** ÖTR şablonu (puanlar, "Rapor taslakları ile ilgili not") · KTR şablonu · Şartname §2.4 (kopya rapor
+diskalifiye kuralı), §4.2, §6 · TEKNOFEST Genel Kurallar ve Etik Kurallar
 
-**Yarışma (birincil):** Şartname v1.5 (özellikle §2.4, §6) · KTR şablonu (Arial 12, 1,15, 2,5 cm, ≤30 sayfa) ·
-TEKNOFEST Genel Kurallar ve Etik Kurallar · Soru&Cevap grubu (her belirsizliği kaydet, REQ'e işle)
-
-**Araçlar:** Google Sheets (durum, REQ, risk), Google Docs/Drive, draw.io, Python, isteğe bağlı SysML aracı
+**Araçlar:** Kontrol listeleri (Sheets), Python, PDF okuyucu ve karşılaştırma, Durum Tablosu v2
 
 ## 4. Ajanla çalışma
-- Konti'yi hakem gibi kullan: "Bu notun zayıf noktalarını ve eksik REQ eşlemelerini bul."
-- Hesap doğrulatırken önce kendi sonucunu yaz, sonra Konti'ye karşılaştırt; aksi hâlde "bağımsız" olmaz.
-- Konti'nin bulgusunu sahibine geri ver; tasarımı Konti yapmasın.
+- Konti'yi **hakem gibi** kullan: "bu bölümü ÖTR puan kriterine göre puanla, eksikleri ve en büyük 3 düzeltmeyi yaz."
+- Hesap doğrularken **önce kendi sonucunu yaz**, sonra Konti'ye karşılaştırt.
+- Bulguyu sahibine geri ver; **tasarımı ve metni Konti düzeltmesin**.
+- Sis'in yazdığı bölümler de Konti incelemesinden geçer; Sezen veya Eren yanındayken.

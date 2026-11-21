@@ -1,5 +1,8 @@
 ﻿# Kişisel Claude Code ayarları
 .claude/settings.local.json
+# Drive'dan indirilen yerel kaynaklar (tek doğruluk kaynağı Drive)
+kaynaklar/*
+!kaynaklar/README.md
 # Sistem dosyaları
 Thumbs.db
 desktop.ini

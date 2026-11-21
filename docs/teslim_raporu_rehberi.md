@@ -1,6 +1,9 @@
 # Teslim Raporu Rehberi
 
 Kaynak: 03_Teslim_Raporu_Rehberi. Örneklerdeki değerler **ÖRNEK DEĞERDİR**, tasarım kararı ya da tavsiye değildir.
+Örnekler v1 dönemindendir (M1, A1, Y1). Kurulum Paketi v2'de ÖTR işleri Ö hattında yürür: Örnek A'nın ÖTR karşılığı Ö1,
+Örnek B'ninki Ö2, Örnek C'ninki Ö3'tür ve hedef durum ONAYLI değil **ÖN SEÇİM**'dir. "Rapor bölümüne katkı" satırları
+ÖTR bölümlerine çevrildi (`docs/otr_rehberi.md`). Örnek A'nın sorumlusu artık Sezen'dir.
 
 ## Beş temel kural
 - Her sayının birimi ve kaynağı yazılır. "Yeterli tork" değil, "3,5 N·m (hesap: m·g·r·2)".
@@ -23,7 +26,7 @@ Kaynak: 03_Teslim_Raporu_Rehberi. Örneklerdeki değerler **ÖRNEK DEĞERDİR**,
 - Karar: 2 eksenli (yaw+pitch) platform (Şart. 5.1, R01). Yaw'da ±60° mekanik durdurucu (R03). Patlatma modülü: [seçilen aile] (R06).
 - VARSAYIM: gövde yüksekliği 0,5 m, hedef yüksekliği 0,3–2,0 m. VARSAYIM: balon çapı şartnamede yok (S&C).
 - Risk: hedef yüksekliği farklıysa pitch yetmeyebilir → çizim doğrulaması + ±5° yedek.
-- Bağımlı İP: M2 (açı, zarf, atalet), A1/A2 (dönme aralığı, enkoder), Y2 (yasak alan sınırları). KTR: §4.1, §4.1.3.
+- Bağımlı İP: M2 (açı, zarf, atalet), A1/A2 (dönme aralığı, enkoder), Y2 (yasak alan sınırları). ÖTR: §3.2 Mekanik Tasarım (bileşen tablosu, 3B model görseli).
 
 ## ÖRNEK B – Avi · A1 Motor ve Güç Notu
 **Girdiler:** M2 v1, T0 v1
@@ -40,7 +43,7 @@ Kaynak: 03_Teslim_Raporu_Rehberi. Örneklerdeki değerler **ÖRNEK DEĞERDİR**,
 - Karar: 220 VAC → 24 VDC (R11). Enkoder + limit anahtarı (R03).
 - VARSAYIM: redüktör verimi %85. VARSAYIM: atalet torku statik torkun altında.
 - Risk: tedarik gecikmesi → iki alternatif üretici.
-- Bağımlı İP: A2 (sürücü arayüzü), M3 (montaj, kutu hacmi), Y2 (PWM/seri arayüz). KTR: §4.2.1, §4.3.
+- Bağımlı İP: A2 (sürücü arayüzü), M3 (montaj, kutu hacmi), Y2 (PWM/seri arayüz). ÖTR: §3.3 Donanım Tasarımı (üretici, model, fiyat tablosu), §3.5 Malzeme Listesi.
 
 ## ÖRNEK C – Kodi · Y1 Algılama Notu
 **Girdiler:** A2 v1 (kamera spec, ICD), T0 v1
@@ -57,7 +60,10 @@ Kaynak: 03_Teslim_Raporu_Rehberi. Örneklerdeki değerler **ÖRNEK DEĞERDİR**,
 (f = 1000 px, D = 0,20 m VARSAYIM)
 - Karar: iki aşamalı algoritma (renk → maket sınıflandırma) (R09, R10). Tek kamera + bilinen boyuttan mesafe.
 - Risk: F16 10 m sınırında mesafe hatası puan kaybı → ikinci yöntem veya güvenlik payı.
-- Bağımlı İP: Y2, Y4, T1. KTR: §4.2.2, §4.3, §4.4.
+- Bağımlı İP: Y2, Y4, T1. ÖTR: §3.4 Yazılım Tasarımı (bileşen tablosu, arayüz şeması).
+
+> **ÖTR dönemi notu:** Bu örnekteki doğruluk ve gecikme değerleri ÖTR'de "ölçüm" değil **hedef** olarak yazılır;
+> ölçüm KTR döneminde yapılır. ÖTR'de kod paylaşılmaz.
 
 ## Sık yapılan hatalar
 Birim/kaynak eksik · varsayımı kesin gibi yazmak · REQ bağlantısı yok · "Bağımlı İP" boş ·
