@@ -2,6 +2,8 @@
 
 Departman lideri: **Eren Aras** · Kaynak: Drive "12 Öğrenme Rehberi – Kodi (v2)"
 
+> **Not:** Bu dosya ajan talimatı değildir, öğrenme/çalışma rehberidir. Kodi'nin ajan tanım dosyası `.claude/agents/kodi.md`'dir.
+
 **v2'de ne değişti:** ÖTR'nin en yüksek puanlı bölümü (Yöntem, 25) diyagram istediği için UML/SysML diyagramları (18) **en başa**
 alındı. Durum makinesi (12), arayüz (14), haberleşme (15), mimari (16) ÖTR önceliğine çıktı. Yeni konu: 19 (yazılım bileşen
 envanteri). Plan ekibi ikiye bölerek yeniden yazıldı.
