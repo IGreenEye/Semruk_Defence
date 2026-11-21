@@ -1,43 +1,60 @@
-# Çelikkubbe Proje Ajanları
+# Semrük Defence – Çelikkubbe Proje Ajanları
 
-TEKNOFEST 2026 Çelikkubbe Hava Savunma Sistemleri Yarışması için 4 mühendislik ajanı (Meka, Avi, Kodi, Konti),
-kapı protokolü, gereksinimler, şablonlar ve öğrenme rehberleri.
+TEKNOFEST Çelikkubbe Hava Savunma Sistemleri Yarışması (2027) için beş mühendislik ajanı (Meka, Avi, Kodi, Sis, Konti),
+kapı protokolü, ÖTR rehberi, gereksinimler, şablonlar ve öğrenme rehberleri. Kurulum Paketi v2'ye göredir.
+**Şimdiki hedef: ÖTR (Ö0–Ö9).**
+
+## Ne nerede?
+| Depo (GitHub) – kurallar, PR ile değişir | Drive – güncel durum, herkes düzenler |
+|---|---|
+| Beş ajanın tanımı, ortak talimat | Durum Tablosu v2: İP durumları, DT kaydı |
+| Kapı protokolü, bağımlılık haritası | Semrük Ana Dosya: kararlar, varsayımlar, riskler, S&C |
+| ÖTR rehberi | Semrük Proje Planı: tarihler, sayfa bütçesi |
+| R01–R18 (onaylı taban çizgisi kopyası) | Teslim Notları, DT'ler, ICD |
+| Teslim Notu / DT şablonları, örnekler | Şartname, ÖTR/KTR şablonları, parkur çizimi |
+| Öğrenme rehberleri (v2) | Öğrenme kanıtları, CAD, rapor taslakları |
+
+Drive'daki **Ajan Talimatları (v2)** klasörü bu depodaki ajan dosyalarıyla aynı içeriği taşır. Bu depodaki sürümlerde ek olarak
+kişi atamaları, ÖTR dönemi kuralları, takvim ve öğrenme modu bulunur. Ajan metni değişirse önce burada (PR) değiştirin,
+sonra Drive'daki talimatı ve Claude Projesi'ni güncelleyin.
 
 ## Klasör yapısı
 ```
 CLAUDE.md                   Ortak talimat (Claude Code otomatik okur)
-.claude/agents/             Ajan tanımları: meka.md, avi.md, kodi.md, konti.md
-docs/                       Tek doğruluk kaynağı
-  kapi_protokolu.md         Durumlar, onay, DT, VARSAYIM kuralları
-  bagimlilik_haritasi.md    İP zinciri ve onay kriterleri
-  durum_tablosu.md          Güncel İP durumları + DT kaydı
-  gereksinimler.md          R01–R15
-  soru_cevap.md             Şartname belirsizlikleri
+.claude/agents/             meka.md, avi.md, kodi.md, sis.md, konti.md
+.github/                    PR şablonu
+docs/
+  otr_rehberi.md            ÖTR bölüm planı, dikkat edilecekler, biçim kontrol listesi, geri sayım
+  kapi_protokolu.md         Durumlar, ÖN SEÇİM, bağımsızlık ataması, Drive'da dosya yerleri
+  bagimlilik_haritasi.md    ÖTR hattı (Ö0–Ö9) ve KTR hattı
+  gereksinimler.md          R01–R18
   teslim_raporu_rehberi.md  Örnek Teslim Notları
 sablonlar/                  teslim_notu.md, degisiklik_talebi.md
-ogrenme/                    Departman öğrenme rehberleri (✓ sütunu ilerleme takibi için)
-  kanitlar/<ajan>/          1 sayfalık çözülmüş örnekler
-teslim_notlari/             İncelemedeki notlar
-  onayli/                   <İP>_v<sürüm>_ONAYLI.md
-dt/                         Değişiklik Talepleri
-icd/                        Arayüz kontrol dokümanları
-kaynaklar/                  Şartname, parkur çizimi, KTR şablonu (PDF)
+ogrenme/                    10_meka, 11_avi, 12_kodi, 13_konti, 14_sis
+kaynaklar/                  (yerel, Git'e girmez) Drive'dan indirilen şartname ve şablonlar
 ```
 
-## Kullanım 1 – Claude Code (önerilen)
-1. Bu klasörde `claude` çalıştır. `CLAUDE.md` otomatik yüklenir, ajanlar `/agents` ile görünür.
-2. Ajanı adıyla çağır:
-   - `meka ajanını kullan: M1 için parkur geometrisinden yaw/pitch aralığını hesapla`
-   - `konti ajanıyla teslim_notlari/M1_v1_INCELEMEDE.md dosyasını doğrula`
-   - `avi ajanı: öğrenme rehberindeki konu 6'yı anlat, sonra benim e-stop şemamı kontrol et`
-3. Önce `kaynaklar/` klasörüne şartname, parkur çizimi ve KTR şablonunu koy.
+## Ajanlar nerede çalışır
+| Ajan | Nerede | Nasıl kurulur |
+|---|---|---|
+| Meka, Sis, Konti | Yusuf'un bilgisayarı (Meka'yı Sezen birlikte kullanır) | Bu depoda `claude` çalıştır; ajanlar `.claude/agents/` klasöründen gelir. Sis ve Konti Drive bağlayıcısıyla Teslim Notlarını okur. |
+| Avi | Sıla'nın bilgisayarı | Sıla'nın Claude hesabında bir Claude Projesi; talimat Drive'daki "Talimat – Avi (v2)" belgesinden |
+| Kodi | Eren ve ekibinin bilgisayarları | Kendi Claude hesaplarında bir Claude Projesi; talimat "Talimat – Kodi (v2)" belgesinden |
 
-## Kullanım 2 – claude.ai Projeleri
-Kurulum Paketi'ndeki yöntem: 4 ayrı Claude Projesi aç (Meka, Avi, Kodi, Konti).
-- Proje talimatına ilgili `.claude/agents/<ajan>.md` dosyasının `---` satırlarının **altındaki** kısmını yapıştır.
-- Proje dosyalarına ekle: şartname, parkur çizimi, KTR şablonu, `docs/` içindeki tüm .md dosyaları,
-  ilgili `ogrenme/` rehberi ve yalnızca **ONAYLI** teslim notları.
+Claude Projesi kurulumu: proje talimatına ilgili talimat belgesinin tamamını yapıştır; proje dosyalarına şartname, parkur çizimi,
+KTR şablonu ve ÖTR şablonunu ekle; girdi olarak yalnızca **ÖN SEÇİM / ONAYLI** Teslim Notlarını ver.
 
-## Akış
-Sahip ajan Teslim Notu yazar → `teslim_notlari/` → Konti doğrular → kaptan onaylar →
-dosya `teslim_notlari/onayli/` altına `_ONAYLI` adıyla taşınır → `docs/durum_tablosu.md` ve Google Sheets güncellenir.
+Yusuf'un bilgisayarında kullanım örnekleri:
+- `sis ajanı: 03_Mekanik klasöründeki Ö1 Teslim Notu'nu oku, eksik alanları ve Avi'nin notuyla çelişkileri listele`
+- `konti ajanı: Ö2 Teslim Notu'ndaki tork ve güç hesabını kendi yönteminle tekrarla`
+- `meka ajanı: Sezen ile konu 5'i (parkur geometrisinden açı hesabı) çalışıyoruz; önce kavramı anlat`
+
+İsteğe bağlı: şartname ve şablonların yerel kopyası için `kaynaklar/` klasörüne indir (Git'e girmez).
+
+## Depoda değişiklik yapma
+`main` korumalıdır; her değişiklik dal + Pull Request ile gelir ve bir onay ister.
+```
+git switch main; git pull
+git switch -c <konu>
+git add -A ; git commit -m "..." ; git push -u origin <konu>
+```
