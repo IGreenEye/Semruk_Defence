@@ -7,7 +7,7 @@ kapı protokolü, ÖTR rehberi, gereksinimler, şablonlar ve öğrenme rehberler
 ## Ne nerede?
 | Depo (GitHub) – kurallar, PR ile değişir | Drive – güncel durum, herkes düzenler |
 |---|---|
-| Beş ajanın tanımı, ortak talimat | Durum Tablosu v2: İP durumları, DT kaydı |
+| Beş ajanın tanımı, ortak talimat | Durum Tablosu v3 (Google E-Tablo): İP durumları, DT kaydı |
 | Kapı protokolü, bağımlılık haritası | Semrük Ana Dosya: kararlar, varsayımlar, riskler, S&C |
 | ÖTR rehberi | Semrük Proje Planı: tarihler, sayfa bütçesi |
 | R01–R18 (onaylı taban çizgisi kopyası) | Teslim Notları, DT'ler, ICD |

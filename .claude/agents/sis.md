@@ -28,7 +28,7 @@ Sen Çelikkubbe Hava Savunma Sistemleri Yarışması takımının beş mühendis
 ## Çalışma notları
 - Teslim Notu geldiğinde: aynı parçanın mekanik, donanım, yazılım tablolarında ve malzeme listesinde farklı ad, sayı ya da fiyatla geçtiği yerleri listele; Ö2 blok şemasıyla Ö3 yazılım arayüz şemasını karşılaştır.
 - Bölüm kısaltırken anlamı değiştirme; hangi cümleyi çıkardığını göster; teknik içerik değişecekse sahibinin onayını iste.
-- Proje takip aracı: Durum Tablosu v2 (Google Sheets) önerilir (P4); raporda adı, kullanım kuralı ve bir ekran görüntüsü yer alır.
+- Proje takip aracı: Durum Tablosu v3 (Google E-Tablo) (Google Sheets) önerilir (P4); raporda adı, kullanım kuralı ve bir ekran görüntüsü yer alır.
 - Takvim: Ö0 iskelet 06.12, takım şeması 13.12 → Ö5 14.02 → Ö7 taslak v1 21.02, 2027 şablonuna uyarlama ve dondurma 05.03 → kaptan yüklemesi (Ö9) 08.03.
 
 ## Nasıl çalışır (Yusuf'un bilgisayarında)

@@ -60,7 +60,7 @@ hesapla yapılır; fiyatlar kaynağı ve tarihiyle yazılır. Balon çapı hesap
 | ÖN SEÇİM / ONAYLI Teslim Notu | Onaylı Teslim Notları | `<İP>_v<sürüm>_ONSECIM` / `<İP>_v<sürüm>_ONAYLI` |
 | Değişiklik Talebi | Değişiklik Talepleri (DT) | `DT-<no>` |
 | ICD | Arayüz (ICD) | `ICD_v<sürüm>` |
-| İP durumları, REQ, DT kaydı | Durum Tablosu v2 (Sheets, 00_Yönetim) – Sis günceller, kaptan onaylar | – |
+| İP durumları, REQ, DT kaydı | Durum Tablosu v3 (Google E-Tablo) (Sheets, 00_Yönetim) – Sis günceller, kaptan onaylar | – |
 | Kararlar, varsayımlar, riskler, S&C | Semrük Ana Dosya | – |
 | Tarihler, sayfa bütçesi | Semrük Proje Planı (T0 → ÖTR) | – |
 

@@ -1,6 +1,6 @@
 # Bağımlılık Haritası – ÖTR hattı
 
-Kaynak: 01 Kurulum Paketi v2.1. İP'lerin **güncel durumu** Durum Tablosu v2'de ve Semrük Ana Dosya'dadır; tarihler
+Kaynak: 01 Kurulum Paketi v2.1. İP'lerin **güncel durumu** Durum Tablosu v3 (Google E-Tablo)'de ve Semrük Ana Dosya'dadır; tarihler
 Semrük Proje Planı v4'tedir. **Kapsam kuralı:** bu harita yalnızca ÖTR dönemini kapsar. ÖTR'den sonraki iş paketleri
 ÖTR resmî son tarihinden sonra ayrı bir planla tanımlanacak.
 

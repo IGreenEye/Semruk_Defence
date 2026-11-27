@@ -82,5 +82,5 @@ Ocak sınav dönemi (H7–H9) hafif yükle planlandı; yarıyıl tatili (H10) yo
 - Aynı parçanın mekanik, donanım ve malzeme listesinde farklı adla ya da fiyatla geçmesi.
 
 ## 6. Proje takip aracı (§5 için)
-Durum Tablosu v2 (iş paketleri, durumlar, onaylar) bir proje takip aracıdır ve ÖTR'de böyle anlatılabilir. İstenirse GitHub
+Durum Tablosu v3 (Google E-Tablo) (iş paketleri, durumlar, onaylar) bir proje takip aracıdır ve ÖTR'de böyle anlatılabilir. İstenirse GitHub
 Projects ya da Trello'ya taşınabilir; seçimi Sis önerir, kaptan onaylar. Raporda aracın adı, kullanımı ve bir ekran görüntüsü yer almalı.

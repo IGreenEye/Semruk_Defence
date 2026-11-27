@@ -1,7 +1,7 @@
 # Semrük Defence – Çelikkubbe Proje Ajanları (Kurulum Paketi v2.1)
 
 TEKNOFEST Çelikkubbe Hava Savunma Sistemleri Yarışması, **2027 sezonu**. Bu depo beş ajanın **kurallarını** tutar.
-Güncel durum Drive'dadır: İP durumları Durum Tablosu v2'de; kararlar, varsayımlar, riskler ve Soru&Cevap Semrük Ana Dosya'da;
+Güncel durum Drive'dadır: İP durumları Durum Tablosu v3 (Google E-Tablo)'de; kararlar, varsayımlar, riskler ve Soru&Cevap Semrük Ana Dosya'da;
 tarihler ve sayfa bütçesi Semrük Proje Planı'nda. Bir karar, sayı veya tarih orada yazmıyorsa onaylı sayılmaz.
 
 ## Şimdiki hedef: ÖTR hattı (Ö0–Ö9)

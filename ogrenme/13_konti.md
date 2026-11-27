@@ -42,7 +42,7 @@ FMEA ve hata ağacı · kötü gün senaryoları · test tasarımı ve istatisti
 **Kitap:** *NASA Systems Engineering Handbook* (NASA/SP-2016-6105; doğrulama bölümleri)
 **Yarışma (birincil):** ÖTR şablonu (puanlar, "Rapor taslakları ile ilgili not") · Şartname §2.1 (kopya rapor kuralı), §2.4, §4.2 ·
 TEKNOFEST Genel Kurallar ve Etik Kurallar (alıntı ve kaynak gösterme)
-**Araçlar:** Kontrol listeleri (Sheets), Python, PDF okuyucu ve karşılaştırma, Durum Tablosu v2
+**Araçlar:** Kontrol listeleri (Sheets), Python, PDF okuyucu ve karşılaştırma, Durum Tablosu v3 (Google E-Tablo)
 
 ## 5. Ajanla çalışma
 - Konti'yi **hakem gibi** kullan: "bu bölümü ÖTR puan kriterine göre puanla, eksikleri ve en büyük 3 düzeltmeyi yaz."

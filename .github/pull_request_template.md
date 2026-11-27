@@ -1,5 +1,5 @@
 ## Ne değişiyor?
-<!-- Bu depo yalnızca kuralları tutar. Teslim Notu, DT ve durum değişiklikleri Drive'a gider (Durum Tablosu v2, Ana Dosya). -->
+<!-- Bu depo yalnızca kuralları tutar. Teslim Notu, DT ve durum değişiklikleri Drive'a gider (Durum Tablosu v3 (Google E-Tablo), Ana Dosya). -->
 - [ ] Ajan tanımı (`.claude/agents/`) – hangi ajan: 
 - [ ] Ortak talimat (`CLAUDE.md`)
 - [ ] Protokol / harita / ÖTR rehberi (`docs/`)
