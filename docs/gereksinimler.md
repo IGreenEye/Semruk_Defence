@@ -1,6 +1,6 @@
 # Gereksinim Listesi (REQ) – R01–R18
 
-Kaynak: 01 Kurulum Paketi v2 §2 ve Semrük Ana Dosya v5. **T0 v1 ONAYLI 21.11.2026**; R16–R18 K3 kararıyla aynı gün eklendi.
+Kaynak: 01 Kurulum Paketi v2.1 §4 ve Semrük Ana Dosya v7. **T0 v1 ONAYLI 21.11.2026**; R16–R18 K3 kararıyla aynı gün eklendi.
 Sis yazar, Konti doğrular. Çözüm ve durum takibi Ana Dosya'daki "Şartname uyum matrisi"ndedir.
 2027 şartnamesi gelince T0 v2 ile güncellenir (hedef 10.01.2027).
 
@@ -20,9 +20,9 @@ Sis yazar, Konti doğrular. Çözüm ve durum takibi Ana Dosya'daki "Şartname u
 | R10 | Aşama-3: 8 tur; tur başına 1 düşman (kırmızı) + 2 dost (mavi); F16 10-15 m (30p), helikopter/füze 5-15 m (20p), İHA 0-15 m (10p); ceza −10 (tur başına en çok −10); 4 ardışık kaçırma = başarısız; baraj 10 | Şart. 6.3 | Kodi, Meka |
 | R11 | Alanda 220 VAC; EMI gereklerini takım sağlar | Şart. 4.3 | Avi |
 | R12 | Kablolar izole, açıkta kablo/bağlantı yok; gövdede keskin nokta yok | Şart. 4.1, 4.2 | Avi, Meka |
-| R13 | Hazırlık 30 dk; toplam bakım 10 dk (her talep en az 30 sn) | Şart. 6 | Sis (plan), Konti (prova) |
-| R14 | Kabiliyet videosu: 7 yetenek (1–6 zorunlu, 7 opsiyonel), 2-5 dk, ≥720p, tek YouTube linki, yetenekler sırayla ve zaman damgalı | Şart. 2.4.4 | Hepsi; Sis plan, Konti prova |
-| R15 | KTR ≤30 sayfa; Arial 12, 1,15 satır, 2,5 cm kenar; bölüm puanları KTR şablonunda | KTR şablonu | Sis (derleme), Konti (inceleme) |
+| R13 | *(ÖTR sonrası – şimdilik kapsam dışı)* Hazırlık 30 dk; toplam bakım 10 dk (her talep en az 30 sn) | Şart. 6 | – |
+| R14 | *(ÖTR sonrası – şimdilik kapsam dışı)* Kabiliyet videosu: 7 yetenek (1–6 zorunlu, 7 opsiyonel), 2-5 dk, ≥720p, tek YouTube linki, yetenekler sırayla ve zaman damgalı | Şart. 2.4.4 | – |
+| R15 | *(ÖTR sonrası – şimdilik kapsam dışı)* KTR ≤30 sayfa; Arial 12, 1,15 satır, 2,5 cm kenar; bölüm puanları KTR şablonunda | KTR şablonu | – |
 | R16 | **ÖTR biçimi:** 3-10 sayfa (kapak, içindekiler, kaynakça, ekler dahil); kapak ve içindekiler ayrı 2 sayfa; Arial 12, başlık Arial Black 14; 1,15 satır; iki yana yaslı; kenar boşlukları üst 2,8 cm, alt-sağ-sol 2,5 cm; tekrarlayan cümle yok; şablona uymayan rapor değerlendirilmez | ÖTR şablonu, Şart. 2.4.1 | Sis |
 | R17 | **Takım şemasında kişisel veri yok** (isim, soyisim, T.C. kimlik no, iletişim); yalnız görev, eğitim seviyesi, sınıf, rol. Kişisel veri içeren tablo değerlendirme dışı kalır | ÖTR şablonu §2 | Sis |
 | R18 | **ÖTR içerik zorunlulukları:** kablo bazlı blok şema (bağlantı ve kablo tipleriyle); mekanik ve donanım bileşen tabloları (üretici, model, özellik, fiyat); tasarlanan bileşenlere prototip fotoğrafı ya da 3B model görseli; yazılım bileşen tablosu (hazır bileşenlerde üretici ve sürüm), kod paylaşılmaz; her üç aşama için ayrı aktivite ve sekans diyagramı (mod geçişi için durum makinesi isteğe bağlı); zaman ve bütçe planı + proje takip aracı; alıntılar şablondaki formatla | ÖTR şablonu §3-6 | Bölüm sahipleri; Sis derler |

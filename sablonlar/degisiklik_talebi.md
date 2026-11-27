@@ -3,18 +3,18 @@
 ONAYLI (veya ÖN SEÇİM) bir çıktıyı değiştirmek gerekirse doldur. Karar çıkana kadar bağımlı İP'ler ASKIDA kalır.
 Akış: isteyen yazar → **Sis** etkilenen İP'leri listeler → **Konti** etki analizini doğrular → **kaptan** onaylar.
 
-**Tarih:** [gg.aa.yyyy] · **İsteyen:** [kişi / ajan] · **Değişen İP ve sürüm:** [örn. Ö1 v1 → v2, M2 v1 → v2]
+**Tarih:** [gg.aa.yyyy] · **İsteyen:** [kişi / ajan] · **Değişen İP ve sürüm:** [örn. Ö1 v1 → v2]
 
 ## Ne değişiyor?
 [Eski değer → yeni değer, birimleriyle]
 
 ## Neden?
-[Hangi bulgu veya test sonucu tetikledi?]
+[Hangi bulgu tetikledi?]
 
 ## Etkilenen İP'ler (Sis doldurur)
 - İP'ler: [ ]
 - Geçersiz olan onaylar / ÖN SEÇİM'ler: [ ]
-- Rapor bölümlerine etkisi (ÖTR/KTR): [ ]
+- ÖTR bölümlerine etkisi: [ ]
 - Tahmini ek süre / maliyet: [ ]
 
 ## Etki analizi doğrulaması (Konti doldurur)
