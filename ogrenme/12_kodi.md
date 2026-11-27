@@ -2,9 +2,6 @@
 
 Departman lideri: **Eren Aras** · Kapsam: **yalnızca ÖTR** (Ö3 + Ö4 → ÖTR §3.4 Yazılım 20 + §4 Yöntem 25, ~3 sayfa)
 
-> **Not:** Bu dosya ajan talimatı değildir, öğrenme/çalışma rehberidir. Kodi'nin ajan tanım dosyası `.claude/agents/kodi.md`'dir
-> (Drive karşılığı: "Talimat – Kodi (v2.1)"). *(Eren Aras'ın `kodi` dalındaki notu)*
-
 **Amaç:** Ö3 ve Ö4'ü yazabilmek için bu yarışmaya özgü boşlukları kapatmak. Ekip deneyimli; liste "dil öğrenme" değildir.
 **Kapsam kuralı:** ÖTR döneminde **kod geliştirme, veri seti, test ve ölçüm yapılmaz.** Yazılım tasarım düzeyinde ele alınır:
 bileşen tablosu, arayüz şeması, diyagramlar, hesaplar. Konular bu yüzden kavram ve hesap düzeyinde çalışılır.
