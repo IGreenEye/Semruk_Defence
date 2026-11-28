@@ -26,7 +26,7 @@ Bu seçimler **ÖN SEÇİM**'dir. Takvim: A1 v0 31.01 → §3.3 07.02 → A2 v0 
 | 7 | Donanımsal limit ve yasak alan: limit anahtarıyla güç kesme | Şart. §4.2, R03 | Yazılımdan bağımsız korumanın blok şemada nerede durduğunu gösterirsin | [ ] |
 | 8 | Kontrolcü seçimi: MCU (STM32/Arduino/ESP32) ↔ gömülü bilgisayar (RPi/Jetson) | İşlemci satırları | Gerçek zamanlı iş ile ağır iş (görüntü) ayrımını gerekçelendirirsin | [ ] |
 | 9 | Haberleşme: UART, SPI, I2C, CAN, RS422/485, Ethernet, USB; gecikme | Blok şemadaki bağlantı tipleri | Her bağlantı için arayüz tipini gerekçesiyle seçersin | [ ] |
-| 12 | Atış tetik elektroniği: solenoid/röle/MOSFET, flyback diyot, güvenli devre dışı | Tetik devresinin blok şemadaki yeri | Tetik hattını ve korumasını blok şemada gösterirsin | [ ] |
+| 12 | Atış modülü ateşleme elektroniği: solenoid/röle/MOSFET, flyback diyot, güvenli devre dışı | Ateşleme devresinin blok şemadaki yeri | Ateşleme hattını ve korumasını blok şemada gösterirsin | [ ] |
 | 14 | Kablolama ve izolasyon: AWG, akım taşıma, ekranlı kablo, konnektör | Kablo tipleri; Şart. §4.1 | Akıma göre kesit seçer, blok şemaya yazarsın | [ ] |
 | 15 | Şematik çizimi (KiCad) – yalnızca kendi kart tasarlanacaksa | Kart görseli | Basit bir güç dağıtım kartının şematiğini çizersin | [ ] |
 | 16 | Kamera donanımı: çözünürlük, FOV, kare hızı, shutter, arayüz, lens, piksel boyutu | Kamera satırı (Kodi ile) | 15 m'de 20 cm'lik balonun kaç piksel olacağını hesaplarsın | [ ] |
