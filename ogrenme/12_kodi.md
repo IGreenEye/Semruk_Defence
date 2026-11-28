@@ -40,7 +40,7 @@ Takvim: durum makinesi taslağı 27.12 → yazılım tablosu ve arayüz şeması
 **Öğrenme kanıtı:** Diyagram taslakları, hesap sayfaları ve bileşen karşılaştırmaları → Drive (05_Yazılım). Hedef: 13.12.2026.
 
 ## 3. ÖTR sonrası (şimdilik kapsam dışı)
-OpenCV ile prototip · ışık ve renk kalibrasyonu ölçümü · veri seti hazırlama · uç cihazda çıkarım ve FPS ölçümü · öne nişan ·
+OpenCV ile prototip · ışık ve renk kalibrasyonu ölçümü · veri seti hazırlama · uç cihazda çıkarım ve FPS ölçümü · hareketli hedefte nişan alma ·
 PID ve gecikmeli kontrol · gecikme zinciri ölçümü · test ve doğrulama metrikleri. ÖTR'den sonra ayrı planla ele alınacak.
 
 ## 4. Kaynaklar

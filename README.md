@@ -4,7 +4,7 @@ TEKNOFEST Çelikkubbe Hava Savunma Sistemleri Yarışması (2027) için beş mü
 kapı protokolü, ÖTR rehberi, gereksinimler, şablonlar ve öğrenme rehberleri. Kurulum Paketi v2.1'e ve ÖTR kapsam kuralına göredir.
 **Şimdiki hedef: ÖTR (Ö0–Ö9).**
 
-**Proje bağlamı:** Bu, TEKNOFEST Çelikkubbe Hava Savunma Sistemleri Yarışması'na katılan bir üniversite öğrenci takımının eğitim amaçlı mühendislik projesidir. Yarışmadaki sistem, 5–15 m uzaklıktaki 3B baskı hedef maketlerinin altına bağlı balonları patlatan, her boyutu 100 cm'den küçük, iki eksende dönen bir platformdur. Şartname patlayıcıyı yasaklar; puan yalnızca balonun patlatılmasıyla verilir. Sistem hakem denetiminde, kapalı bir yarışma parkurunda, acil durdurma butonu ve hareket/atış yasak alanı gibi zorunlu güvenlik önlemleriyle çalışır. Şu anki aşama yalnızca kâğıt üzerinde ön tasarım raporudur (ÖTR); üretim, alım ve test yapılmaz.
+**Proje bağlamı:** Bu, TEKNOFEST Çelikkubbe Hava Savunma Sistemleri Yarışması'na katılan bir üniversite öğrenci takımının eğitim amaçlı mühendislik projesidir. Yarışmadaki sistem, 5–15 m uzaklıktaki 3B baskı hedef maketlerinin altına bağlı balonları patlatan, her boyutu 100 cm'den küçük, iki eksende dönen bir platformdur. Şartname patlayıcıyı yasaklar; puan yalnızca balonun patlatılmasıyla verilir. Sistem hakem denetiminde, izleyicilerden ayrılmış bir yarışma alanında, acil durdurma butonu ve hareket/atış yasak alanı gibi zorunlu güvenlik önlemleriyle çalışır. Şu anki aşama yalnızca kâğıt üzerinde ön tasarım raporudur (ÖTR); üretim, alım ve test yapılmaz.
 
 ## Ne nerede?
 | Depo (GitHub) – kurallar, PR ile değişir | Drive – güncel durum, herkes düzenler |

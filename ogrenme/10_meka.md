@@ -34,7 +34,7 @@ Bu değerler **ÖN SEÇİM**'dir. Takvim: M1 v1 27.12 → M2 v0 24.01 → 3B mod
 | 20 | Hazır bileşen araştırması: model, özellik, fiyat, teslim süresi | Bileşen tablosu; Sis'in malzeme listesi | Her hazır parça için en az iki alternatifi fiyatı ve kaynağıyla tabloya koyarsın | [ ] |
 | 21 | Teknik görselleştirme: render, patlatılmış ve ölçülü görünüş | 3B model görseli | 1/3 sayfada okunabilen, ana bileşenleri etiketli bir montaj görseli üretirsin | [ ] |
 
-**Roket deneyiminle köprü:** CG, yük ve dayanım benzer; fark dönen kütle, atalet ve nişan kararlılığıdır.
+**Roket deneyiminle köprü:** CG, yük ve dayanım benzer; fark dönen kütle, atalet ve nişan alma kararlılığıdır.
 
 ## 2. 3 haftalık plan (Proje Planı H1–H3)
 - **Hafta 1:** konu 1, 2, 3, 5; CAD pratiği (11).
@@ -44,7 +44,7 @@ Bu değerler **ÖN SEÇİM**'dir. Takvim: M1 v1 27.12 → M2 v0 24.01 → 3B mod
 **Öğrenme kanıtı:** Her konu için 1 sayfalık "çözülmüş örnek" → Drive (03_Mekanik). Hedef: 13.12.2026.
 
 ## 3. ÖTR sonrası (şimdilik kapsam dışı)
-Geri tepme ve darbe yükü · titreşim · rulman/mil/civata hesabı · sonlu eleman analizi · GD&T ve toleranslar · imalat yöntemleri ·
+Atış tepki kuvveti · titreşim · rulman/mil/civata hesabı · sonlu eleman analizi · GD&T ve toleranslar · imalat yöntemleri ·
 kablo yönlendirme · test ve ölçüm. ÖTR'den sonra ayrı planla ele alınacak.
 
 ## 4. Kaynaklar

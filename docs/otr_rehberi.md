@@ -31,10 +31,10 @@ Puanın **45'i Kodi'de** (yazılım + yöntem), **25'i Avi'de** (blok şema + do
 ## 2. Bölüm bazında dikkat edilecekler
 **Yöntem (25, Kodi):** 3 aşama × 2 diyagram + 1 durum makinesi = 7 görsel, 1,7 sayfa. Her aşamaya ~yarım sayfa (aktivite ve
 sekans yan yana). Yer yetmezse durum makinesi küçültülür; aşama diyagramları küçültülmez. Yazılar okunaklı kalmalı.
-- Aşama-1: manuel mod, zarfla gelen hedef sırası, operatörün yönlendirme ve ateş komutu, yanlış sıra cezasından kaçınma,
+- Aşama-1: manuel mod, zarfla gelen hedef sırası, operatörün yönlendirme ve ateş emri, yanlış sıra cezasından kaçınma,
   sıradaki hedef parkurda yoksa ya da yalnızca daha düşük bir menzil bölgesinde kalmışsa pas geçme kuralı.
 - Aşama-2: otonom mod, üç koldan gelen hedeflerin tespiti, hedef önceliklendirme, tur sonu.
-- Aşama-3: otonom mod, renkle dost-düşman ayrımı, hedef tipine göre menzil (F16 10–15 m, helikopter/füze 5–15 m, İHA 0–15 m), dosta ateş etmeme.
+- Aşama-3: otonom mod, renkle dost-düşman ayrımı, hedef tipine göre menzil (F16 10–15 m, helikopter/füze 5–15 m, İHA 0–15 m), dost unsura ateş etmeme.
 - Her aşamada: e-stop, hareket-yasak ve atış-yasak alan davranışı, 0°/0° başlangıç.
 
 **Blok şema (5, Avi):** Kutular arasındaki her çizgi bir kablodur; üzerinde bağlantı tipi (USB 3, CAN, RS485, PWM, 24 VDC,
